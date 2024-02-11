@@ -35,5 +35,12 @@ might help with the notation for mathematical expressions.
 
 Recurrence relation for mystery():
 
-T(n) { undefined if n <= 1
-     { $3T(n / 3) + n^2$ otherwise
+T(n) { undefined if $n <= 1$ <br>
+     { $3T(n / 3) + n^2$ otherwise <br>
+
+Solving by substitution:<br>
+$T(n) = 3T(n/3) + n^2$<br>
+$T(n) = 3(3T(n/3)/3 + n^2/3) + n^2$<br>
+$T(n) = 9T(n/9) + 4n^2$<br>
+
+Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3^iT(n/3^i) + in^2$
