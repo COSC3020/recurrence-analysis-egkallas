@@ -31,3 +31,9 @@ function mystery(n) {
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
+
+
+Recurrence relation for mystery():
+
+T(n) { undefined if n <= 1
+     { $3T(n / 3) + n^2$ otherwise
