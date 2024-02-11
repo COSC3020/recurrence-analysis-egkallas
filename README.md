@@ -35,8 +35,8 @@ might help with the notation for mathematical expressions.
 
 Recurrence relation for mystery():
 
-$T(n) { undefined if $n <= 1$ <br>
-     ${ 3T(n / 3) + n^2 otherwise$ <br>
+$T(n) = undefined if $n <= 1$ <br>
+     $ 3T(n / 3) + n^2 otherwise$ <br>
 
 Solving by substitution:<br>
 $T(n) = 3T(n/3) + n^2$<br>
