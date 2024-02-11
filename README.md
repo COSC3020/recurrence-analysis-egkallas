@@ -48,7 +48,7 @@ Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3
 To terminate the recurrence, n must = 1. <br>
 Value of i when n = 1: <br>
 $1 = 3^i$<br>
-$log_3{1) = i$<br>
+$log_3{1} = i$<br>
 $i = 0$<br>
 
 After subsituting, the time complexity is found to be $\Theta(n^2)$
