@@ -40,7 +40,7 @@ $3T(n / 3) + n^5$ otherwise <br>
 
 Solving by substitution:<br>
 $T(n) = 3T(n/3) + n^5$<br>
-$T(n) = 3(3T(n/3)/3 + n/3^5) + n^5$<br>
+$T(n) = 3(3T(\fact n/3)/3 + n/3^5) + n^5$<br>
 $T(n) = 9T(n/9) + 6n^2$<br>
 
 Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3^iT(n/3^i) + 3n^2i$<br>
