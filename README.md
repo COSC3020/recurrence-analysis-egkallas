@@ -51,7 +51,7 @@ $n/3^i = 1$<br>
 $n = 3^i$<br>
 $i = \log_{3} n$ <- value of i when n = 1. <br>
 Plugging that back in: <br>
-$3^{\log_{3}} n * T(1) + (\log_{3} n * 3n^2)$<br>
+$3^{\log_{3} n}  * T(1) + (\log_{3} n * 3n^2)$<br>
 This simplifies to $n + \log_{3} n * 3n^2$<br>
 Therefor, the time complexity is found to be $\Theta(n^2)$
 
