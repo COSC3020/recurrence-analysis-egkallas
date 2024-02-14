@@ -41,7 +41,7 @@ $3T(n / 3) + n^6$ otherwise <br>
 Solving by substitution:<br>
 $T(n) = 3T(n/3) + n^6$<br>
 $T(n) = 3(3T(n/3)/3 + n^6/3) + n^6$<br>
-$T(n) = 9T(n/9) + 4n^6$<br>
+$T(n) = 9T(n/9) + 2n^6$<br>
 
 Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3^iT(n/3^i) + in^2$<br>
 
@@ -51,7 +51,7 @@ $1 = 3^i$<br>
 $log_3{1} = i$<br>
 $i = 0$<br>
 
-After subsituting, the time complexity is found to be $\Theta(n^2)$
+After subsituting, the time complexity is found to be $\Theta(n^6)$
 
 
 
