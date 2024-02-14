@@ -41,7 +41,7 @@ $3T(n / 3) + 3n^2$ otherwise <br>
 Solving by substitution:<br>
 $T(n) = 3T(n/3) + 3n^2$<br>
 $T(n) = 3(3T(n/3)/3 + 3n^2/3) + 3n^2$<br>
-$T(n) = 9T(n/9) + 4n^2$<br>
+$T(n) = 9T(n/9) + 6n^2$<br>
 
 Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3^iT(n/3^i) + i3n^2$<br>
 
