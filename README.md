@@ -45,14 +45,14 @@ $T(n) = 9T(n/9) + 2n^5$<br>
 
 Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3^iT(n/3^i) + n^5i$<br>
 
-To terminate the recurrence, $T(n)$ must be $\lec1$. <br>
+To terminate the recurrence, $T(n)$ must be <= 1. <br>
 According to the pattern, $T(1) = T(n/3^i)$<br>
 $n/3^i = 1$<br>
 $n = 3^i$<br>
 $i = \log_{3} n$ <- value of i when n = 1. <br>
 Plugging that back in: <br>
-$3^{\log_{3} n}  * T(1) + (\log_{3} n * 3n^2)$<br>
-This simplifies to $n + \log_{3} n * 3n^2$<br>
+$3^{\log_{3} n}  * T(1) + (\log_{3} n * n^5)$<br>
+This simplifies to $n + \log_{3} n * n^5$<br>
 Therefor, the time complexity is found to be $\Theta(n^2)$
 
 
