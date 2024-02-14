@@ -49,10 +49,11 @@ To terminate the recurrence, $T(n)$ must = $1$. <br>
 According to the pattern, $T(1) = T(n/3^i)$<br>
 $n/3^i = 1$<br>
 $n = 3^i$<br>
-$i = log_3{n}$<br>
-
-
-After subsituting, the time complexity is found to be $\Theta(n^2)$
+$i = log_3^n$<br> <- value of i when n = 1. <br>
+Plugging that back in: <br>
+$3^log_3^n * T(1) + (log_3^n * 3n^2)$<br>
+This simplifies to $n + log_3^n * 3n^2$<br>
+Therefor, the time complexity is found to be $\Theta(n^2)$
 
 
 
