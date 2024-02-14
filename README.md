@@ -43,7 +43,7 @@ $T(n) = 3T(n/3) + n^6$<br>
 $T(n) = 3(3T(n/3)/3 + n^6/3) + n^6$<br>
 $T(n) = 9T(n/9) + 2n^6$<br>
 
-Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3^iT(n/3^i) + in^2$<br>
+Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3^iT(n/3^i) + in^6$<br>
 
 To terminate the recurrence, n must = 1. <br>
 Value of i when n = 1: <br>
