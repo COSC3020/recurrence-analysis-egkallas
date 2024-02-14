@@ -43,7 +43,7 @@ $T(n) = 3T(n/3) + 3n^2$<br>
 $T(n) = 3(3T(n/3)/3 + 3(n/3)^2) + 3n^2$<br>
 $T(n) = 9T(n/9) + 6n^2$<br>
 
-Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3^iT(n/3^i) + i3n^2$<br>
+Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3^iT(n/3^i) + 3n^2i$<br>
 
 To terminate the recurrence, $T(n)$ must be $\lec1$. <br>
 According to the pattern, $T(1) = T(n/3^i)$<br>
