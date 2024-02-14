@@ -51,7 +51,7 @@ $1 = 3^i$<br>
 $log_3{1} = i$<br>
 $i = 0$<br>
 
-After subsituting, the time complexity is found to be $\Theta(n^6)$
+After subsituting, the time complexity is found to be $\Theta(n^2)$
 
 
 
