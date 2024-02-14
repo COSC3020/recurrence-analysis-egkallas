@@ -46,7 +46,10 @@ $T(n) = 9T(n/9) + 6n^2$<br>
 Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3^iT(n/3^i) + i3n^2$<br>
 
 To terminate the recurrence, $T(n)$ must = $1$. <br>
-According to the pattern, $T(1) = T(n/3^i)$
+According to the pattern, $T(1) = T(n/3^i)$<br>
+$n/3^i = 1$<br>
+$n = 3^i$<br>
+$i = log_3{n}$<br>
 
 
 After subsituting, the time complexity is found to be $\Theta(n^2)$
