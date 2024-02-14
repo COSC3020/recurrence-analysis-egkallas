@@ -36,7 +36,7 @@ might help with the notation for mathematical expressions.
 Recurrence relation for mystery():
 
 $T(n) =$ 1 if $n <= 1$ <br>
-$3T(n / 3) + 3n^2$ otherwise <br>
+$3T(n / 3) + n^5$ otherwise <br>
 
 Solving by substitution:<br>
 $T(n) = 3T(n/3) + n^5$<br>
