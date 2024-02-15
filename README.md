@@ -53,7 +53,7 @@ $i = \log_{3} n$ <- value of i when n = 1. <br>
 Plugging that back in: <br>
 $3^{\log_{3} n}  * T(1) + (\log_{3} n * n^5)$<br>
 This simplifies to $n + \log_{3} n * n^5$<br>
-Therefor, the time complexity is found to be $\Theta(n^5)$
+Therefor, the time complexity is found to be $\Theta(n^5 * \log_{3) n$
 
 
 
