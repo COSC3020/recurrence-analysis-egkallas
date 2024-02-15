@@ -51,7 +51,7 @@ $\frac{n}{3^i} = 1$<br>
 $n = 3^i$<br>
 $i = \log_{3} n$ <- value of i when n = 1. <br>
 Plugging that back in: <br>
-$3^{\log_{3} n}  * T(1) + (\log_{3} n * n^5)$<br>
+$3^{\log_{3} n}  * T(1) + \frac{n^5}{3^{(\log_{3} n) + 2}}$<br>
 This simplifies to $n + \log_{3} n * n^5$<br>
 Therefor, the time complexity is found to be $\Theta(n^5 log_3n)$
 
