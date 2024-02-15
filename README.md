@@ -47,7 +47,7 @@ Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3
 
 To terminate the recurrence, $T(n)$ must be <= 1. <br>
 According to the pattern, $T(1) = T(\frac{n}{3^i})$<br>
-$n/3^i = 1$<br>
+$\frac{n}{3^i} = 1$<br>
 $n = 3^i$<br>
 $i = \log_{3} n$ <- value of i when n = 1. <br>
 Plugging that back in: <br>
