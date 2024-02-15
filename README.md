@@ -41,7 +41,7 @@ $3T(\frac{n}{3}) + n^5$ otherwise <br>
 Solving by substitution:<br>
 $T(n) = 3T(\frac{n}{3}) + n^5$<br>
 $T(n) = 3(3T(\frac{n/3}{3}) + (\frac{n}{3})^5) + n^5$<br>
-$T(n) = 9T(\frac{n}{9}) + \frac{n^5}{3^4} + n^5$<br>
+$T(n) = 3^2T(\frac{n}{3^2}) + \frac{n^5}{3^4} + n^5$<br>
 
 Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3^iT(\frac{n^5}{3^i}) + n^5i$<br>
 
