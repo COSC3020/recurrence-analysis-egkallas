@@ -36,14 +36,14 @@ might help with the notation for mathematical expressions.
 Recurrence relation for mystery():
 
 $T(n) =$ 1 if $n <= 1$ <br>
-$3T(n / 3) + n^5$ otherwise <br>
+$3T(\frac{n}{3}) + n^5$ otherwise <br>
 
 Solving by substitution:<br>
 $T(n) = 3T(\frac{n}{3}) + n^5$<br>
 $T(n) = 3(3T(\frac{n/3}{3}) + \frac{n}{3}^5) + n^5$<br>
 $T(n) = 9T(\frac{n}{9}) + 2n^5$<br>
 
-Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3^iT(n/3^i) + n^5i$<br>
+Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3^iT(\frac{n}{3^i}^5) + n^5i$<br>
 
 To terminate the recurrence, $T(n)$ must be <= 1. <br>
 According to the pattern, $T(1) = T(n/3^i)$<br>
