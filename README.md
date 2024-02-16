@@ -54,7 +54,7 @@ $n = 3^i$<br>
 $i = \log_{3} n$ <- value of i when n = 1. <br>
 Plugging that back in: <br>
 $3^{\log_{3} n}  * T(1) + \displaystyle\sum_{i=2}^k \frac{n^5}{3^{(\log_{3} n) + 2}} + n^5$<br>
-This simplifies to $n + \frac{n^5}{n+2} + n^5$<br>
+This simplifies to $n + \displaystyle\sum_{i=2}^k\frac{n^5}{n+2} + n^5$<br>
 Therefor, the time complexity is found to be $\Theta(n^5)$
 
 
