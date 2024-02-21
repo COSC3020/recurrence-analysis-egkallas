@@ -53,7 +53,7 @@ $\frac{n}{3^i} = 1$<br>
 $n = 3^i$<br>
 $i = \log_{3} n$ <- value of i when n = 1. <br>
 Plugging that back in: <br>
-$3^{\log_{3} n}  * T(1) + \displaystyle\sum_{j=0}^i \frac{n^5}{3^{(\log_{3} n) + 2}} + n^5$<br>
+$3^{\log_{3} n}  * T(1) + \displaystyle\sum_{j=0}^{\log_{3} n} \frac{n^5}{3^{(\log_{3} n) + 2}} + n^5$<br>
 This simplifies to $n + \displaystyle\sum_{j=0}^{\log_{3} n}\frac{n^5}{n+2} + n^5$<br>
 Therefor, the time complexity is found to be $\Theta(n^5)$
 
