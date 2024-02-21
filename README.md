@@ -45,7 +45,7 @@ $T(n) = 3^2T(\frac{n}{3^2}) + \frac{n^5}{3^4} + n^5$<br>
 Skipping the substitution step the next experession is:<br>
 $T(n) = 3^3T(\frac{n}{3^3}) + \frac{n^5}{3^5} + \frac{n^5}{3^4} + n^5$<br>
 
-Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3^iT(\frac{n}{3^i}) + \displaystyle\sum_{j=0}^k \frac{n^5}{3^{i+2}}  + n^5$ when $k = i$.<br>
+Analysing the pattern, the expression for this recurrence relation is: $T(n) = 3^iT(\frac{n}{3^i}) + \displaystyle\sum_{j=0}^i \frac{n^5}{3^{i+2}}  + n^5$.<br>
 
 To terminate the recurrence, $T(n)$ must be <= 1. <br>
 According to the pattern, $T(1) = T(\frac{n}{3^i})$<br>
@@ -53,8 +53,8 @@ $\frac{n}{3^i} = 1$<br>
 $n = 3^i$<br>
 $i = \log_{3} n$ <- value of i when n = 1. <br>
 Plugging that back in: <br>
-$3^{\log_{3} n}  * T(1) + \displaystyle\sum_{j=0}^k \frac{n^5}{3^{(\log_{3} n) + 2}} + n^5$<br>
-This simplifies to $n + \displaystyle\sum_{j=0}^k\frac{n^5}{n+2} + n^5$<br>
+$3^{\log_{3} n}  * T(1) + \displaystyle\sum_{j=0}^i \frac{n^5}{3^{(\log_{3} n) + 2}} + n^5$<br>
+This simplifies to $n + \displaystyle\sum_{j=0}^i\frac{n^5}{n+2} + n^5$<br>
 Therefor, the time complexity is found to be $\Theta(n^5)$
 
 
